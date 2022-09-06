@@ -1,0 +1,145 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,noedge,left]{./examples/profile}
+\name{Fabio}{Battaglia}
+\position{Lead Software Engineer{\enskip\cdotp\enskip}Architect}
+\address{Tierney Lane 2 Faulkner House London, UK}
+
+\mobile{(+44) 7503831291}
+\email{fabio.battaglia90@gmail.com}
+%\dateofbirth{January 1st, 1970}
+% \gitlab{gitlab-id}
+\stackoverflow{https://stackoverflow.com/users/7000960/farbiondriven}{farbiondriven}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \kaggle{kaggle-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+%\quote{``Be the change that you want to see in the world."}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {SPIRE}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for IoT Edge Architect}
+% How the letter is opened
+\letteropening{Dear,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Fabio Battaglia~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+I am pleased to be applying for this Engineer Team Leader position as I believe
+that I possess everything necessary to execute the role and all associated duties successfully.
+
+My name is Fabio Battaglia and I am a dedicated and passionate engineer with a strong determination
+to build innovative products and services. I strongly believe that all complex goals are reachable
+with good design and constructive team work. Currently I'm working as an Engineer team lead at Remark AI UK,
+building AI pipelines for real time image analysis. With my team we built a IOT and cloud infrastructure
+to get analytic results from video stream and structure the data in a cloud server, using mostly
+Python and C++. I'm in charge of
+the architecture and managing the tasks between the team, while still developing some functionalities.
+
+I graduated with a master's degree in Automation Engineering and Robotics and a bachelor degree
+in Software Engineering cum laude at the University of Catania, Italy.
+I have direct experience with all applications and coding languages required in the job description,
+I believe that I am an ideal candidate for the position not just for the technical side, but because I feel
+I can contribute to the team spirit and culture.
+Finally, I have attached my up-to-date CV for your review so please do not hesitate to contact me
+if you have any questions on my career history.
+
+
+Thank you for your time and consideration and I look forward to speaking with you in the near future.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}
