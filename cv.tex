@@ -23,9 +23,6 @@
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
-% Specify the location of the included fonts
-\fontdir[fonts/]
-
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
@@ -39,7 +36,9 @@
 % \definecolor{text}{HTML}{333333}
 % \definecolor{graytext}{HTML}{5D5D5D}
 % \definecolor{lighttext}{HTML}{999999}
-\hypersetup{pdfstartview={XYZ null null 1.00}}
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
@@ -51,11 +50,11 @@
 % Available options: circle|rectangle,edge/noedge,left/right
 %\photo[rectangle,edge,right]{primo}
 \name{}{Fabio Battaglia}
-\position{Software Engineer{\enskip\cdotp\enskip}}
-\address{6 Cromwell Mansions, King Street, London, UK W69JX}
-\birth{Born in Italy, 22-Sep-1990}
+\position{Lead Software Engineer{\enskip\cdotp\enskip}}
+\address{68 Avenue du Dix Septembre, 2550 Luxembourg}
+\dateofbirth{22-Sep-1990}
 
-\mobile{(+44) 750 383 1291 {\enskip\cdotp\enskip} (+39) 340 381 35 42}
+\mobile{(+44) 750 383 1291}
 \email{fabio.battaglia90@gmail.com}
 \linkedin{fabiobattaglia90}
 \github{farbiondriven}
@@ -68,7 +67,7 @@
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader[C]
+\makecvheader
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
