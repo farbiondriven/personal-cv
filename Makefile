@@ -4,7 +4,7 @@
 
 .PHONY: cv
 
-CV_SRCS = $(shell find -name '*.tex')
+CV_SRCS = $(shell find . -type f -name '*.tex')
 
 cv: cv.pdf
 
