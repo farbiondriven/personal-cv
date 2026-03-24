@@ -1,0 +1,81 @@
+\documentclass[12pt,twoside]{article}
+
+\usepackage[paperwidth=3.5in, paperheight=3.5in]{geometry}
+\setlength{\hoffset}{-0.60in} % this gives a .30in margin
+\setlength{\textwidth}{5in}
+\setlength{\voffset}{0in}
+\setlength{\textheight}{6.5in} % 1in margin at top and bottom; default text height is 430pt
+\setlength{\marginparwidth}{0in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\usepackage{parskip}
+\usepackage{layout}
+
+\usepackage{calligra}
+\pagenumbering{gobble}
+
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{fontspec}
+\usepackage{dashrule}
+\usepackage{tabularx}
+\usepackage{pbox}
+\usepackage{tabu}
+\usepackage{multicol}
+
+%\usepackage[garamond]{mathdesign}
+%\usepackage[T1]{fontenc}
+
+\usepackage[T1]{fontenc}
+
+% To make a booklet
+%\usepackage[print,1to1]{booklet}
+%\source{1}{5.8in}{8.3in}
+%\target{0.5}{11.7in}{8.3in}
+
+\definecolor{ourblue}{rgb}{0,0.16,0.48}
+
+\newcommand{\hone}[1]{{\centering \Huge\scshape #1
+
+\bigskip
+
+}}
+
+\newcommand{\htwo}[1]{{\Large\scshape #1}}
+
+
+\newcommand{\mycal}[1]{\textcalligra{#1}}
+
+\newcommand{\linesep}{\raisebox{1.1pt}{\fontsize{4pt}{4.8pt}\fontspec{wmdividers1.TTF}p}} % other good letters: r, s, P, y, N
+\newcommand{\psep}{\bigskip{\fontspec{wmdividers1.TTF}p}\bigskip}
+
+\newenvironment{keeptogether}{\begin{minipage}{\textwidth}}{\end{minipage}}
+
+\begin{document}
+
+% Shows the page layouts, with measurements and all
+%\layout
+
+\color{ourblue}
+
+\vspace*{\fill}
+
+{\centering
+\psep
+\vspace{3em}
+
+{\Huge
+\mycal{Allegra}\\
+\mycal{\&}\\ \medskip
+\mycal{Fabio}
+}
+
+\vspace{3em}
+\psep
+\vspace{3em}
+
+\textsc{
+26 Luglio 2024\\ \medskip
+}
+
+}
+\end{document}
